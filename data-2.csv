@@ -1,0 +1,4 @@
+uri,familyName,givenName,mbox,workHours,baseSalary,phone,workplace_uri
+employees:kel_adam,"Kel","Adam","adam.kel@examplemail.com","8am-4pm",155,"+420420420420",zoo:0
+employees:ladinova_eva,"Ladinova","Eva","ladinova.eva@examplemail.com","7am-5pm",255,"420906890239",zoo:0
+employees:letnanska_petra,"Letňanská","Petra","petralet@examplemail.com","1pm-8pm",145,"+420551579853",zoo:0

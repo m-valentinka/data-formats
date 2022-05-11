@@ -1,0 +1,4 @@
+uri,scientificName,latinName,documentationLink,enclosure_uri
+animalFamilies:python_molurus,"Krajta tigrovitá","Python molurus","http://examplezoo.com/wiki/python_molurus",enclosures:terarium_krajta
+animalFamilies:rupicapra_rupicapra,"Kamzík horský","Rupicapra rupicapra","http://examplezoo.com/wiki/rupicapra_rupicapra",enclosures:vybeh_kamzik
+animalFamilies:gallus_gallus,"Kur domácí","Gallus gallus","http://examplezoo.com/wiki/gallus_gallus",enclosures:klec_kur

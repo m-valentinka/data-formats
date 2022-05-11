@@ -1,0 +1,49 @@
+{
+    "@id": "https://examplezoo.com/data-1.csv-metadata.json",
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "en"
+        }
+    ],
+    "@type": "Table",
+    "url": "data-1.csv",
+    "tableSchema": {
+        "@type": "Schema",
+        "columns": [
+            {
+                "@type": "Column",
+                "name": "uri",
+                "titles": "uri",
+                "dc:description": "URI od animal keeper",
+                "datatype": "anyURI",
+                "required": true
+              },
+              {
+                "@type": "Column",
+                "name": "base_uri",
+                "titles": "base_uri",
+                "dc:description": "uri referring to base information about animal keeper",
+                "datatype": "anyURI",
+                "required": true
+              },
+              {
+                "@type": "Column",
+                "name": "education_uri",
+                "titles": "education_uri",
+                "dc:description": "uri referring to education information",
+                "datatype": "anyURI",
+                "required": true
+              },
+              {
+                "@type": "Column",
+                "name": "specialization_uri",
+                "titles": "specialization_uri",
+                "dc:description": "uri referring to specialization information",
+                "datatype": "anyURI",
+                "required": true
+              }
+        ],
+        "primaryKey": "uri"
+    }
+}

@@ -1,0 +1,4 @@
+uri,name,area,isInterior,typeOfFence,zoo_uri,keeper_uri
+enclosures:terarium_krajta,"Terárium krajta",3.07,"true","sklo",zoo:0,keepers:kel_adam
+enclosures:vybeh_kamzik,"Výběh kamzík",76.12,"false","pletivo",zoo:0,keepers:kel_adam
+enclosures:klec_kur,"Klec kur",9.23,"false","klec",zoo:0,keepers:kel_adam

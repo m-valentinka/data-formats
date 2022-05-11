@@ -1,0 +1,4 @@
+uri,name,duration,difficulty,maximumAttendeeCapacity
+routes:domaci_zv,"Domácí zvířata",45,2.0,15
+routes:cela_zoo,"Celá ZOO",180,4.0,50
+routes:teraria,"Teráriá",30,1.0,10
