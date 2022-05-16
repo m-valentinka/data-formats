@@ -97,6 +97,7 @@
             "propertyUrl": "foaf:familyName",
             "dc:description": "Family name",
             "datatype": "string",
+            "lang": "cs",
             "required": true
           },
           {
@@ -106,6 +107,7 @@
             "propertyUrl": "foaf:givenName",
             "dc:description": "Given name",
             "datatype": "string",
+            "lang": "cs",
             "required": true
           },
           {
@@ -187,6 +189,7 @@
             "propertyUrl": "schema:name",
             "dc:description": "name of the specialization",
             "datatype": "string",
+            "lang": "cs",
             "required": true
           }
         ],
@@ -264,6 +267,7 @@
             "propertyUrl": "schema:name",
             "dc:description": "Name of the ZOO",
             "datatype": "string",
+            "lang": "cs",
             "required": true
           },
           {
@@ -273,6 +277,7 @@
             "propertyUrl": "schema:address",
             "dc:description": "Address of the ZOO",
             "datatype": "string",
+            "lang": "cs",
             "required": true
           }
         ],
@@ -301,6 +306,7 @@
             "propertyUrl": "schema:name",
             "dc:description": "name of the enclosure",
             "datatype": "string",
+            "lang": "cs",
             "required": true
           },
           {
@@ -318,7 +324,7 @@
             "titles": "isInterior",
             "propertyUrl": "ex:isInterior",
             "dc:description": "is interior boolean",
-            "datatype": "string",
+            "datatype": "string"
             "required": true
           },
           {
@@ -328,6 +334,7 @@
             "propertyUrl": "ex:typeOfFence",
             "dc:description": "type of fence",
             "datatype": "string",
+            "lang":"cs",
             "required": true
           },
           {
@@ -466,6 +473,7 @@
             "propertyUrl": "schema:name",
             "dc:description": "name of the route",
             "datatype": "string",
+            "lang":"cs",
             "required": true
           },
           {
@@ -521,6 +529,7 @@
             "propertyUrl": "uniprot:scientificName",
             "dc:description": "scientific name of the family",
             "datatype": "string",
+            "lang":"cs",
             "required": true
           },
           {
@@ -530,6 +539,7 @@
             "propertyUrl": "ex:latinName",
             "dc:description": "latin name of the family",
             "datatype": "string",
+            "lang":"la",
             "required": true
           },
           {
@@ -577,6 +587,7 @@
             "propertyUrl": "schema:name",
             "dc:description": "name of the animal",
             "datatype": "string",
+            "lang":"cs",
             "required": true
           },
           {
@@ -718,6 +729,7 @@
             "propertyUrl": "schema:dayOfWeek",
             "dc:description": "day of week",
             "datatype": "string",
+            "lang":"en",
             "required": true
           },
           {
