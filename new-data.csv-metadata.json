@@ -324,7 +324,7 @@
             "titles": "isInterior",
             "propertyUrl": "ex:isInterior",
             "dc:description": "is interior boolean",
-            "datatype": "string"
+            "datatype": "string",
             "required": true
           },
           {
