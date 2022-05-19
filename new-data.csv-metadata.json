@@ -708,8 +708,8 @@
               {
                   "@type": "Column",
                   "name": "route_uri",
-                "titles": "route_uri",
-                "dc:description": "uri of the route",
+                  "titles": "route_uri",
+                  "dc:description": "uri of the route",
                   "required": true,
                   "aboutUrl": "{+enclosure_uri}",
                   "propertyUrl": "ex:route",
@@ -760,6 +760,7 @@
             "@type": "Column",
             "name": "route_uri",
             "titles": "route_uri",
+            "valueUrl": "{+route_uri}",
             "dc:description": "uri of the route",
             "datatype": "anyURI",
             "required": true
@@ -793,6 +794,7 @@
       "url": "data-13.csv",
       "tableSchema": {
         "@type": "Schema",
+        "aboutUrl":"{+dayOfWeek}",
         "columns": [
           {
             "@type": "Column",
