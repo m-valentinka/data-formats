@@ -609,9 +609,11 @@
             "@type": "Column",
             "name": "enclosure_uri",
             "titles": "enclosure_uri",
-            "propertyUrl": "foaf:mbox",
+            "propertyUrl": "ex:habitat",
             "dc:description": "uri of the enclosure",
             "datatype": "anyURI",
+            "aboutUrl":"{+uri}",
+            "valueUrl":"{+enclosure_uri}",
             "required": true
           }
         ],
@@ -711,7 +713,6 @@
                   "titles": "route_uri",
                   "dc:description": "uri of the route",
                   "required": true,
-                  "aboutUrl": "{+enclosure_uri}",
                   "propertyUrl": "ex:route",
                   "valueUrl": "{+route_uri}"
               }
@@ -752,8 +753,10 @@
             "@type": "Column",
             "name": "guide_uri",
             "titles": "guide_uri",
+            "valueUrl": "{+guide_uri}",
             "dc:description": "uri of the guide",
             "datatype": "anyURI",
+            "propertyUrl":"ex:guide",
             "required": true
           },
           {
@@ -761,6 +764,7 @@
             "name": "route_uri",
             "titles": "route_uri",
             "valueUrl": "{+route_uri}",
+            "propertyUrl":"ex:route",
             "dc:description": "uri of the route",
             "datatype": "anyURI",
             "required": true
@@ -800,13 +804,13 @@
             "@type": "Column",
             "name": "dayOfWeek",
             "titles": "dayOfWeek",
-            "valueUrl": "schema:dayOfWeek",
-            "dc:description": "day of week",
-            "datatype": "string",
+            "dc:description": "day",
+            "datatype": "anyURI",
             "propertyUrl":"rdf:type",
-            "lang":"en",
+            "valueUrl":"schema:dayOfWeek",
             "required": true
           },
+          
           {
             "@type": "Column",
             "name": "opens",
@@ -831,6 +835,9 @@
             "titles": "place_uri",
             "dc:description": "uri of the locations of this opening time",
             "datatype": "anyURI",
+            "aboutUrl":"{+uri}",
+            "propertyUrl":"ex:zoo",
+            "valueUrl":"{+place_uri}",
             "required": true
           }
         ],
