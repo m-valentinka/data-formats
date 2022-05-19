@@ -37,7 +37,7 @@
             "datatype": "anyURI",
             "aboutUrl":"{+uri}",
             "propertyUrl":"ex:base",
-            "valueUrl":"{e_uri}/base_uri",
+            "valueUrl":"base_uri",
             "required": true
           },
           {
@@ -48,7 +48,7 @@
             "datatype": "anyURI",
             "aboutUrl":"{+uri}",
             "propertyUrl":"ex:education",
-            "valueUrl":"{+uri}/education_uri",
+            "valueUrl":"{+level_uri}/education_uri",
             "required": true
           },
           {
@@ -76,7 +76,7 @@
             "columnReference": "education_uri",
             "reference": {
               "resource": "data-3.csv",
-              "columnReference": "uri"
+              "columnReference": "level_uri"
             }
           },
           {
@@ -95,7 +95,7 @@
       "url": "data-2.csv",
       "tableSchema": {
         "@type": "Schema",
-        "aboutUrl":"{+e_uri}",
+        "aboutUrl":"{+uri}",
         "columns": [
           {
             "@type": "Column",
@@ -190,13 +190,16 @@
       "url": "data-3.csv",
       "tableSchema": {
         "@type": "Schema",
+        "aboutUrl":"{+level_uri}",
         "columns": [
           {
             "@type": "Column",
-            "name": "uri",
-            "titles": "uri",
-            "dc:description": "uri of the specialization",
+            "name": "level_uri",
+            "titles": "level_uri",
+            "dc:description": "uri of education level",
             "datatype": "anyURI",
+            "propertyUrl":"rdf:type",
+            "valueUrl":"ex:EducationalLevel",
             "required": true
           },
           {
@@ -206,11 +209,11 @@
             "propertyUrl": "schema:name",
             "dc:description": "name of the specialization",
             "datatype": "string",
-            "lang": "cs",
+            "lang": "en",
             "required": true
           }
         ],
-        "primaryKey": "uri"
+        "primaryKey": "level_uri"
       }
     },
     {
@@ -219,6 +222,7 @@
       "url": "data-4.csv",
       "tableSchema": {
         "@type": "Schema",
+        "aboutUrl":"{+uri}",
         "columns": [
           {
             "@type": "Column",
@@ -226,6 +230,8 @@
             "titles": "uri",
             "dc:description": "Public specialization uri",
             "datatype": "anyURI",
+            "propertyUrl":"rdf:type",
+            "valueUrl":"ex:Specialization",
             "required": true
           },
           {
