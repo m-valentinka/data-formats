@@ -705,6 +705,7 @@
                 "titles": "enclosure_uri",
                 "dc:description": "uri of the enclosure",
                 "datatype": "anyURI",
+                "valueUrl": "{+enclosure_uri}",
                 "required": true
               },
               {
@@ -806,6 +807,7 @@
             "titles": "dayOfWeek",
             "dc:description": "day",
             "datatype": "anyURI",
+            "aboutUrl": "{+dayOfWeek}",
             "propertyUrl":"rdf:type",
             "valueUrl":"schema:dayOfWeek",
             "required": true
