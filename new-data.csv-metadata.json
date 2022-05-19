@@ -805,23 +805,20 @@
         "columns": [
           {
             "@type": "Column",
-            "name": "dayOfWeek",
-            "titles": "dayOfWeek",
-            "dc:description": "day",
+            "name": "uri",
+            "titles": "uri",
+            "dc:description": "Day uri",
             "datatype": "anyURI",
-            "aboutUrl": "{+uri}",
             "propertyUrl":"rdf:type",
             "valueUrl":"schema:dayOfWeek",
             "required": true
           },
-          
           {
             "@type": "Column",
             "name": "opens",
             "titles": "opens",
             "propertyUrl": "schema:opens",
-            "aboutUrl":"{+uri}",
-            "dc:description": "Opens time",
+            "dc:description": "opening time",
             "datatype": "string",
             "required": true
           },
@@ -830,31 +827,27 @@
             "name": "closes",
             "titles": "closes",
             "propertyUrl": "schema:closes",
-            "aboutUrl":"{+uri}",
-            "dc:description": "Closes time",
+            "dc:description": "Closing time",
             "datatype": "string",
             "required": true
           },
+          
           {
             "@type": "Column",
-            "name": "place_uri",
-            "titles": "place_uri",
-            "dc:description": "uri of the locations of this opening time",
+            "name": "workplace_uri",
+            "titles": "workplace_uri",
+            "dc:description": "uri of the institution",
             "datatype": "anyURI",
             "aboutUrl":"{+uri}",
-            "propertyUrl":"ex:zoo",
-            "valueUrl":"{+place_uri}",
+            "propertyUrl":"schema:worksFor",
+            "valueUrl":"{+workplace_uri}",
             "required": true
           }
         ],
-        "primaryKey": [
-          "dayOfWeek",
-          "opens",
-          "closes"
-        ],
+        "primaryKey": ["uri","opens","closes"],
         "foreignKeys": [
           {
-            "columnReference": "place_uri",
+            "columnReference": "workplace_uri",
             "reference": {
               "resource": "data-5.csv",
               "columnReference": "uri"
@@ -863,5 +856,6 @@
         ]
       }
     }
+          
   ]
 }
