@@ -670,6 +670,9 @@
             "titles": "family_uri",
             "dc:description": "uri of the amnimal family",
             "datatype": "anyURI",
+            "aboutUrl":"{+uri}",
+            "propertyUrl":"foaf:member",
+            "valueUrl":"{+family_uri}",
             "required": true
           }
         ],
@@ -700,6 +703,9 @@
             "titles": "enclosure_uri",
             "dc:description": "uri of the enclosure",
             "datatype": "anyURI",
+            "aboutUrl":"{+uri}",
+            "propertyUrl":"ex:enclosure",
+            "valueUrl":"{+enclosure_uri}",
             "required": true
           },
           {
@@ -708,6 +714,9 @@
             "titles": "route_uri",
             "dc:description": "uri of the route",
             "datatype": "anyURI",
+            "aboutUrl":"{+uri}",
+            "propertyUrl":"ex:route",
+            "valueUrl":"{+route_uri}",
             "required": true
           }
         ],
