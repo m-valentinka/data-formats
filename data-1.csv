@@ -1,3 +1,3 @@
 uri,base_uri,education_uri,specialization_uri
-keeper:kel_adam,employees:kel_adam,educationLevels:level_advanced,specializations:odbornik_ter
-keeper:ladinova_eva,employees:ladinova_eva,educationLevels:level_advanced,specializations:hlavni_hlidac
+keeper:kel_adam,employees:kel_adam,edLevels:advanced_ed_level,specializations:odbornik_ter
+keeper:ladinova_eva,employees:ladinova_eva,edLevels:advanced_ed_level,specializations:hlavni_hlidac
