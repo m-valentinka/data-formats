@@ -17,6 +17,9 @@
                 "titles": "uri",
                 "dc:description": "URI od animal keeper",
                 "datatype": "anyURI",
+                "aboutUrl": "{+uri}",
+                "propertyUrl": "rdf:type",
+                "valueUrl": "ex:AnimalKeeper",
                 "required": true
               },
               {
@@ -25,6 +28,10 @@
                 "titles": "base_uri",
                 "dc:description": "uri referring to base information about animal keeper",
                 "datatype": "anyURI",
+                "aboutUrl": "{+uri}",
+                "propertyUrl": "ex:base",
+                "valueUrl": "{+base_uri}",
+                "virtual": true,
                 "required": true
               },
               {
@@ -33,6 +40,10 @@
                 "titles": "education_uri",
                 "dc:description": "uri referring to education information",
                 "datatype": "anyURI",
+                "aboutUrl": "{+uri}",
+                "propertyUrl": "ex:education",
+                "valueUrl": "{+education_uri}",
+                "virtual": true,
                 "required": true
               },
               {
@@ -41,6 +52,10 @@
                 "titles": "specialization_uri",
                 "dc:description": "uri referring to specialization information",
                 "datatype": "anyURI",
+                "aboutUrl": "{+uri}",
+                "propertyUrl": "ex:specialization",
+                "valueUrl": "{+specialization_uri}",
+                "virtual": true,
                 "required": true
               }
         ],
