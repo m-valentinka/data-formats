@@ -801,6 +801,7 @@
       "url": "data-13.csv",
       "tableSchema": {
         "@type": "Schema",
+        "aboutUrl":"{+dayOfWeek}",
         "columns": [
           {
             "@type": "Column",
@@ -838,7 +839,7 @@
             "titles": "place_uri",
             "dc:description": "uri of the locations of this opening time",
             "datatype": "anyURI",
-            "aboutUrl":"{+uri}",
+            "aboutUrl":"{+dayOfWeek}",
             "propertyUrl":"ex:zoo",
             "valueUrl":"{+place_uri}",
             "required": true
