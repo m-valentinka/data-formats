@@ -13,8 +13,10 @@
       "@id": "https://examplezoo.com/data-1.csv-metadata.json",
       "@type": "Table",
       "url": "data-1.csv",
+      
       "tableSchema": {
         "@type": "Schema",
+        "aboutUrl":"{+uri}",
         "columns": [
           {
             "@type": "Column",
