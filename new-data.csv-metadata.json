@@ -48,7 +48,7 @@
             "datatype": "anyURI",
             "aboutUrl":"{+uri}",
             "propertyUrl":"ex:education",
-            "valueUrl":"{+uri}/education_uri",
+            "valueUrl":"{+education_uri}",
             "required": true
           },
           {
@@ -59,7 +59,7 @@
             "datatype": "anyURI",
             "aboutUrl":"{+uri}",
             "propertyUrl":"ex:specialization",
-            "valueUrl":"{+uri}/specialization_uri",
+            "valueUrl":"{+specialization_uri}",
             "required": true
           }
         ],
@@ -169,6 +169,9 @@
             "titles": "workplace_uri",
             "dc:description": "uri of the institution",
             "datatype": "anyURI",
+            "aboutUrl":"{+uri}",
+            "propertyUrl":"schema:worksFor",
+            "valueUrl":"{+workplace_uri}",
             "required": true
           }
         ],
@@ -372,6 +375,9 @@
             "titles": "zoo_uri",
             "dc:description": "uri of the zoo",
             "datatype": "anyURI",
+            "aboutUrl":"{+uri}",
+            "propertyUrl":"ex:coverage",
+            "valueUrl":"{+zoo_uri}",
             "required": true
           },
           {
@@ -380,6 +386,9 @@
             "titles": "keeper_uri",
             "dc:description": "uri of the keeper",
             "datatype": "anyURI",
+            "aboutUrl":"{+uri}",
+            "propertyUrl":"ex:mantainance ",
+            "valueUrl":"{+keeper_uri}",
             "required": true
           }
         ],
@@ -427,6 +436,7 @@
             "propertyUrl": "foaf:nick",
             "dc:description": "nick of the guide",
             "datatype": "string",
+            "lang":"cs",
             "required": true
           },
           {
@@ -453,6 +463,9 @@
             "titles": "base_uri",
             "dc:description": "uri referring to base information about animal keeper",
             "datatype": "anyURI",
+            "aboutUrl":"{+uri}",
+            "propertyUrl":"ex:base",
+            "valueUrl":"{+base_uri}",
             "required": true
           },
           {
@@ -461,6 +474,9 @@
             "titles": "specialization_uri",
             "dc:description": "uri of the specialization",
             "datatype": "anyURI",
+            "aboutUrl":"{+uri}",
+            "propertyUrl":"ex:specialization",
+            "valueUrl":"{+specialization_uri}",
             "required": true
           }
         ],
