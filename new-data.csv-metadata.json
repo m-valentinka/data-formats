@@ -30,10 +30,11 @@
           },
           {
             "@type": "Column",
-            "name": "base_uri",
-            "titles": "base_uri",
-            "dc:description": "uri referring to base information about animal keeper",
+            
             "datatype": "anyURI",
+            "propertyUrl":"ex:base",
+            "valueUrl":"{+uri}/base_uri",
+            "virtual":true,
             "required": true
           },
           {
