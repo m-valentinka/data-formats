@@ -801,7 +801,7 @@
       "url": "data-13.csv",
       "tableSchema": {
         "@type": "Schema",
-        "aboutUrl":"{+dayOfWeek}",
+        "aboutUrl":"{+uri}",
         "columns": [
           {
             "@type": "Column",
@@ -809,7 +809,7 @@
             "titles": "dayOfWeek",
             "dc:description": "day",
             "datatype": "anyURI",
-            "aboutUrl": "{+dayOfWeek}",
+            "aboutUrl": "{+uri}",
             "propertyUrl":"rdf:type",
             "valueUrl":"schema:dayOfWeek",
             "required": true
@@ -820,6 +820,7 @@
             "name": "opens",
             "titles": "opens",
             "propertyUrl": "schema:opens",
+            "aboutUrl":"{+uri}",
             "dc:description": "Opens time",
             "datatype": "string",
             "required": true
@@ -829,6 +830,7 @@
             "name": "closes",
             "titles": "closes",
             "propertyUrl": "schema:closes",
+            "aboutUrl":"{+uri}",
             "dc:description": "Closes time",
             "datatype": "string",
             "required": true
@@ -839,7 +841,7 @@
             "titles": "place_uri",
             "dc:description": "uri of the locations of this opening time",
             "datatype": "anyURI",
-            "aboutUrl":"{+dayOfWeek}",
+            "aboutUrl":"{+uri}",
             "propertyUrl":"ex:zoo",
             "valueUrl":"{+place_uri}",
             "required": true
