@@ -31,6 +31,17 @@
           
           {
             "@type": "Column",
+            "name": "base_uri",
+            "titles": "base_uri",
+            "aboutUrl":"{+uri}",
+            "dc:description": "uri referring to base information about animal keeper",
+            "datatype": "anyURI",
+            "propertyUrl":"ex:base",
+            "valueUrl":"http://examplezoo.com/employees/{base_uri}",
+            "required": true
+          },
+          {
+            "@type": "Column",
             "name": "education_uri",
             "titles": "education_uri",
             "dc:description": "uri referring to education information",
@@ -43,14 +54,6 @@
             "titles": "specialization_uri",
             "dc:description": "uri referring to specialization information",
             "datatype": "anyURI",
-            "required": true
-          },
-          {
-            "@type": "Column",
-            "datatype": "anyURI",
-            "propertyUrl":"ex:base",
-            "valueUrl":"base_uri",
-            "virtual":true,
             "required": true
           }
         ],
