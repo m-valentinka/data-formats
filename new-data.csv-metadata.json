@@ -37,7 +37,7 @@
             "datatype": "anyURI",
             "aboutUrl":"{+uri}",
             "propertyUrl":"ex:base",
-            "valueUrl":"{+base_uri}",
+            "valueUrl":"{e_uri}/base_uri",
             "required": true
           },
           {
@@ -48,7 +48,7 @@
             "datatype": "anyURI",
             "aboutUrl":"{+uri}",
             "propertyUrl":"ex:education",
-            "valueUrl":"{education_uri}",
+            "valueUrl":"{+uri}/education_uri",
             "required": true
           },
           {
@@ -95,6 +95,7 @@
       "url": "data-2.csv",
       "tableSchema": {
         "@type": "Schema",
+        "aboutUrl":"{+e_uri}",
         "columns": [
           {
             "@type": "Column",
@@ -102,6 +103,8 @@
             "titles": "uri",
             "dc:description": "Public employee uri",
             "datatype": "anyURI",
+            "propertyUrl":"rdf:type",
+            "valueUrl":"ex:Employee",
             "required": true
           },
           {
