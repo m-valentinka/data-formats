@@ -28,15 +28,7 @@
             "valueUrl":"ex:AnimalKeeper",
             "required": true
           },
-          {
-            "@type": "Column",
-            
-            "datatype": "anyURI",
-            "propertyUrl":"ex:base",
-            "valueUrl":"{+uri}/base_uri",
-            "virtual":true,
-            "required": true
-          },
+          
           {
             "@type": "Column",
             "name": "education_uri",
@@ -51,6 +43,14 @@
             "titles": "specialization_uri",
             "dc:description": "uri referring to specialization information",
             "datatype": "anyURI",
+            "required": true
+          },
+          {
+            "@type": "Column",
+            "datatype": "anyURI",
+            "propertyUrl":"ex:base",
+            "valueUrl":"base_uri",
+            "virtual":true,
             "required": true
           }
         ],
