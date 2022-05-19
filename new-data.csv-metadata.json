@@ -33,9 +33,9 @@
             "@type": "Column",
             "name": "base_uri",
             "titles": "base_uri",
-            "aboutUrl":"{+uri}",
             "dc:description": "uri referring to base information about animal keeper",
             "datatype": "anyURI",
+            "aboutUrl":"{+uri}",
             "propertyUrl":"ex:base",
             "valueUrl":"{+uri}/base_uri",
             "required": true
@@ -46,6 +46,9 @@
             "titles": "education_uri",
             "dc:description": "uri referring to education information",
             "datatype": "anyURI",
+            "aboutUrl":"{+uri}",
+            "propertyUrl":"ex:education",
+            "valueUrl":"{+uri}/education_uri",
             "required": true
           },
           {
@@ -54,6 +57,9 @@
             "titles": "specialization_uri",
             "dc:description": "uri referring to specialization information",
             "datatype": "anyURI",
+            "aboutUrl":"{+uri}",
+            "propertyUrl":"ex:specialization",
+            "valueUrl":"{+uri}/specialization_uri",
             "required": true
           }
         ],
