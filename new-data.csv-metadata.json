@@ -703,19 +703,21 @@
                 "@type": "Column",
                 "name": "enclosure_uri",
                 "titles": "enclosure_uri",
+                "valueUrl": "{+enclosure_uri}",
                 "dc:description": "uri of the enclosure",
                 "datatype": "anyURI",
-                "valueUrl": "{+enclosure_uri}",
+                "propertyUrl":"ex:enclosure",
                 "required": true
               },
               {
-                  "@type": "Column",
-                  "name": "route_uri",
-                  "titles": "route_uri",
-                  "dc:description": "uri of the route",
-                  "required": true,
-                  "propertyUrl": "ex:route",
-                  "valueUrl": "{+route_uri}"
+                "@type": "Column",
+                "name": "route_uri",
+                "titles": "route_uri",
+                "valueUrl": "{+route_uri}",
+                "propertyUrl":"ex:route",
+                "dc:description": "uri of the route",
+                "datatype": "anyURI",
+                "required": true
               }
               
           ],
@@ -799,7 +801,7 @@
       "url": "data-13.csv",
       "tableSchema": {
         "@type": "Schema",
-        "aboutUrl":"{+dayOfWeek}",
+        "aboutUrl":"{+uri}",
         "columns": [
           {
             "@type": "Column",
@@ -807,7 +809,7 @@
             "titles": "dayOfWeek",
             "dc:description": "day",
             "datatype": "anyURI",
-            "aboutUrl": "{+dayOfWeek}",
+            "aboutUrl": "{+uri}",
             "propertyUrl":"rdf:type",
             "valueUrl":"schema:dayOfWeek",
             "required": true
