@@ -37,7 +37,7 @@
             "datatype": "anyURI",
             "aboutUrl":"{+uri}",
             "propertyUrl":"ex:base",
-            "valueUrl":"{+uri}/base_uri",
+            "valueUrl":"{+base_uri}",
             "required": true
           },
           {
@@ -48,7 +48,7 @@
             "datatype": "anyURI",
             "aboutUrl":"{+uri}",
             "propertyUrl":"ex:education",
-            "valueUrl":"{+uri}/education_uri",
+            "valueUrl":"{education_uri}",
             "required": true
           },
           {
