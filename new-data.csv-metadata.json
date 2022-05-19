@@ -37,7 +37,7 @@
             "datatype": "anyURI",
             "aboutUrl":"{+uri}",
             "propertyUrl":"ex:base",
-            "valueUrl":"base_uri",
+            "valueUrl":"{+base_uri}",
             "required": true
           },
           {
@@ -46,9 +46,9 @@
             "titles": "education_uri",
             "dc:description": "uri referring to education information",
             "datatype": "anyURI",
-            "aboutUrl":"{+level_uri}",
+            "aboutUrl":"{+uri}",
             "propertyUrl":"ex:education",
-            "valueUrl":"{+level_uri}/education_uri",
+            "valueUrl":"{+uri}/education_uri",
             "required": true
           },
           {
@@ -76,7 +76,7 @@
             "columnReference": "education_uri",
             "reference": {
               "resource": "data-3.csv",
-              "columnReference": "level_uri"
+              "columnReference": "uri"
             }
           },
           {
@@ -190,12 +190,12 @@
       "url": "data-3.csv",
       "tableSchema": {
         "@type": "Schema",
-        "aboutUrl":"{+level_uri}",
+        "aboutUrl":"{+uri}",
         "columns": [
           {
             "@type": "Column",
-            "name": "level_uri",
-            "titles": "level_uri",
+            "name": "uri",
+            "titles": "uri",
             "dc:description": "uri of education level",
             "datatype": "anyURI",
             "propertyUrl":"rdf:type",
@@ -213,7 +213,7 @@
             "required": true
           }
         ],
-        "primaryKey": "level_uri"
+        "primaryKey": "uri"
       }
     },
     {
@@ -274,6 +274,7 @@
       "url": "data-5.csv",
       "tableSchema": {
         "@type": "Schema",
+        "aboutUrl":"{+uri}",
         "columns": [
           {
             "@type": "Column",
@@ -281,6 +282,8 @@
             "titles": "uri",
             "dc:description": "Public zoo uri",
             "datatype": "anyURI",
+            "propertyUrl":"rdf:type",
+            "valueUrl":"ex:Zoo",
             "required": true
           },
           {
@@ -313,6 +316,7 @@
       "url": "data-6.csv",
       "tableSchema": {
         "@type": "Schema",
+        "aboutUrl":"{+uri}",
         "columns": [
           {
             "@type": "Column",
@@ -320,6 +324,8 @@
             "titles": "uri",
             "dc:description": "uri of the enclosure",
             "datatype": "anyURI",
+            "propertyUrl":"rdf:type",
+            "valueUrl":"ex:Enclosure",
             "required": true
           },
           {
@@ -402,6 +408,7 @@
       "url": "data-7.csv",
       "tableSchema": {
         "@type": "Schema",
+        "aboutUrl":"{+uri}",
         "columns": [
           {
             "@type": "Column",
@@ -409,6 +416,8 @@
             "titles": "uri",
             "dc:description": "uri of the guide",
             "datatype": "anyURI",
+            "propertyUrl":"rdf:type",
+            "valueUrl":"ex:Guide",
             "required": true
           },
           {
@@ -480,6 +489,7 @@
       "url": "data-8.csv",
       "tableSchema": {
         "@type": "Schema",
+        "aboutUrl":"{+uri}",
         "columns": [
           {
             "@type": "Column",
@@ -487,6 +497,8 @@
             "titles": "uri",
             "dc:description": "uri of the route",
             "datatype": "anyURI",
+            "propertyUrl":"rdf:type",
+            "valueUrl":"ex:Route",
             "required": true
           },
           {
@@ -536,6 +548,7 @@
       "url": "data-9.csv",
       "tableSchema": {
         "@type": "Schema",
+        "aboutUrl":"{+uri}",
         "columns": [
           {
             "@type": "Column",
@@ -543,6 +556,8 @@
             "titles": "uri",
             "dc:description": "uri of the animal family",
             "datatype": "anyURI",
+            "propertyUrl":"rdf:type",
+            "valueUrl":"ex:AnimalFamily",
             "required": true
           },
           {
@@ -602,7 +617,18 @@
       "url": "data-10.csv",
       "tableSchema": {
         "@type": "Schema",
+        "aboutUrl":"{+uri}",
         "columns": [
+          {
+            "@type": "Column",
+            "name": "uri",
+            "titles": "uri",
+            "dc:description": "uri of the animal ",
+            "datatype": "anyURI",
+            "propertyUrl":"rdf:type",
+            "valueUrl":"ex:Animal",
+            "required": true
+          },
           {
             "@type": "Column",
             "name": "name",
@@ -632,8 +658,7 @@
           }
         ],
         "primaryKey": [
-          "name",
-          "birthDate"
+          "uri",
         ],
         "foreignKeys": [
           {
@@ -749,9 +774,10 @@
             "@type": "Column",
             "name": "dayOfWeek",
             "titles": "dayOfWeek",
-            "propertyUrl": "schema:dayOfWeek",
+            "valueUrl": "schema:dayOfWeek",
             "dc:description": "day of week",
             "datatype": "string",
+            "propertyUrl":"rdf:type",
             "lang":"en",
             "required": true
           },
