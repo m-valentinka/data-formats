@@ -46,7 +46,7 @@
             "titles": "education_uri",
             "dc:description": "uri referring to education information",
             "datatype": "anyURI",
-            "aboutUrl":"{+uri}",
+            "aboutUrl":"{+level_uri}",
             "propertyUrl":"ex:education",
             "valueUrl":"{+level_uri}/education_uri",
             "required": true
