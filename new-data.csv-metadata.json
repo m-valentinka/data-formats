@@ -704,9 +704,9 @@
                 "name": "enclosure_uri",
                 "titles": "enclosure_uri",
                 "valueUrl": "{+enclosure_uri}",
+                "propertyUrl":"ex:enclosureCoverage",
                 "dc:description": "uri of the enclosure",
                 "datatype": "anyURI",
-                "propertyUrl":"ex:enclosure",
                 "required": true
               },
               {
@@ -714,7 +714,7 @@
                 "name": "route_uri",
                 "titles": "route_uri",
                 "valueUrl": "{+route_uri}",
-                "propertyUrl":"ex:route",
+                "propertyUrl":"ex:routeCoverage",
                 "dc:description": "uri of the route",
                 "datatype": "anyURI",
                 "required": true
@@ -759,7 +759,7 @@
             "valueUrl": "{+guide_uri}",
             "dc:description": "uri of the guide",
             "datatype": "anyURI",
-            "propertyUrl":"ex:guide",
+            "propertyUrl":"ex:guidance",
             "required": true
           },
           {
@@ -767,7 +767,7 @@
             "name": "route_uri",
             "titles": "route_uri",
             "valueUrl": "{+route_uri}",
-            "propertyUrl":"ex:route",
+            "propertyUrl":"ex:coverage",
             "dc:description": "uri of the route",
             "datatype": "anyURI",
             "required": true
@@ -801,7 +801,6 @@
       "url": "data-13.csv",
       "tableSchema": {
         "@type": "Schema",
-        "aboutUrl":"{+uri}",
         "columns": [
           {
             "@type": "Column",
@@ -809,7 +808,7 @@
             "titles": "dayOfWeek",
             "dc:description": "day",
             "datatype": "anyURI",
-            "aboutUrl": "{+uri}",
+            "aboutUrl": "{+dayOfWeek}",
             "propertyUrl":"rdf:type",
             "valueUrl":"schema:dayOfWeek",
             "required": true
