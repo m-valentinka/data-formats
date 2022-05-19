@@ -37,7 +37,7 @@
             "dc:description": "uri referring to base information about animal keeper",
             "datatype": "anyURI",
             "propertyUrl":"ex:base",
-            "valueUrl":"http://examplezoo.com/employees/{base_uri}",
+            "valueUrl":"{+base_uri}",
             "required": true
           },
           {
