@@ -689,35 +689,35 @@
           }
         ]
       }
-    },
-    {
+    },{
       "@id": "https://examplezoo.com/data-11.csv-metadata.json",
       "@type": "Table",
       "url": "data-11.csv",
       "tableSchema": {
-        "@type": "Schema",
-        "columns": [
-          {
-            "@type": "Column",
-            "name": "enclosure_uri",
-            "titles": "enclosure_uri",
-            "dc:description": "uri of the enclosure",
-            "datatype": "anyURI",
-            "propertyUrl":"ex:enclosure",
-            "valueUrl":"{+enclosure_uri}",
-            "required": true
-          },
-          {
-            "@type": "Column",
-            "name": "route_uri",
-            "titles": "route_uri",
-            "dc:description": "uri of the route",
-            "datatype": "anyURI",
-            "propertyUrl":"ex:route",
-            "valueUrl":"{+route_uri}",
-            "required": true
-          }
-        ],
+          "@type": "Schema",
+          "columns": [
+              
+              {
+                "@type": "Column",
+                "name": "enclosure_uri",
+                "titles": "enclosure_uri",
+                "dc:description": "uri of the enclosure",
+                "datatype": "anyURI",
+                "required": true
+              },
+              {
+                  "@type": "Column",
+                  "name": "route_uri",
+                "titles": "route_uri",
+                "dc:description": "uri of the route",
+                  "required": true,
+                  "aboutUrl": "{+enclosure_uri}",
+                  "propertyUrl": "ex:route",
+                  "valueUrl": "{+route_uri}"
+              }
+              
+          ],
+          
         "primaryKey": [
           "enclosure_uri",
           "route_uri"
@@ -739,7 +739,8 @@
           }
         ]
       }
-    },
+  },
+    
     {
       "@id": "https://examplezoo.com/data-12.csv-metadata.json",
       "@type": "Table",
