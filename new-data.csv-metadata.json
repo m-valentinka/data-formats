@@ -16,53 +16,40 @@
       "tableSchema": {
         "@type": "Schema",
         "columns": [
-            {
-                "@type": "Column",
-                "name": "uri",
-                "titles": "uri",
-                "dc:description": "URI od animal keeper",
-                "datatype": "anyURI",
-                "aboutUrl": "{+uri}",
-                "propertyUrl": "rdf:type",
-                "valueUrl": "ex:AnimalKeeper",
-                "required": true
-              },
-              {
-                "@type": "Column",
-                "name": "base_uri",
-                "titles": "base_uri",
-                "dc:description": "uri referring to base information about animal keeper",
-                "datatype": "anyURI",
-                "aboutUrl": "{+uri}",
-                "propertyUrl": "ex:base",
-                "valueUrl": "{+base_uri}",
-                "virtual": true,
-                "required": true
-              },
-              {
-                "@type": "Column",
-                "name": "education_uri",
-                "titles": "education_uri",
-                "dc:description": "uri referring to education information",
-                "datatype": "anyURI",
-                "aboutUrl": "{+uri}",
-                "propertyUrl": "ex:education",
-                "valueUrl": "{+education_uri}",
-                "virtual": true,
-                "required": true
-              },
-              {
-                "@type": "Column",
-                "name": "specialization_uri",
-                "titles": "specialization_uri",
-                "dc:description": "uri referring to specialization information",
-                "datatype": "anyURI",
-                "aboutUrl": "{+uri}",
-                "propertyUrl": "ex:specialization",
-                "valueUrl": "{+specialization_uri}",
-                "virtual": true,
-                "required": true
-              }
+          {
+            "@type": "Column",
+            "name": "uri",
+            "titles": "uri",
+            "dc:description": "URI od animal keeper",
+            "datatype": "anyURI",
+            "propertyUrl":"rdf:type",
+            "valueUrl":"ex:AnimalKeeper",
+            "required": true
+          },
+          {
+            "@type": "Column",
+            "name": "base_uri",
+            "titles": "base_uri",
+            "dc:description": "uri referring to base information about animal keeper",
+            "datatype": "anyURI",
+            "required": true
+          },
+          {
+            "@type": "Column",
+            "name": "education_uri",
+            "titles": "education_uri",
+            "dc:description": "uri referring to education information",
+            "datatype": "anyURI",
+            "required": true
+          },
+          {
+            "@type": "Column",
+            "name": "specialization_uri",
+            "titles": "specialization_uri",
+            "dc:description": "uri referring to specialization information",
+            "datatype": "anyURI",
+            "required": true
+          }
         ],
         "primaryKey": "uri",
         "foreignKeys": [
@@ -103,9 +90,6 @@
             "titles": "uri",
             "dc:description": "Public employee uri",
             "datatype": "anyURI",
-            "aboutUrl": "{+uri}",
-            "propertyUrl": "rdf:type",
-            "valueUrl": "ex:Employee",
             "required": true
           },
           {
@@ -170,10 +154,6 @@
             "titles": "workplace_uri",
             "dc:description": "uri of the institution",
             "datatype": "anyURI",
-            "aboutUrl": "{+uri}",
-            "propertyUrl": "schema:worksFor",
-            "valueUrl": "{+workplace_uri}",
-            "virtual": true,
             "required": true
           }
         ],
